@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <title>마경수의 홈페이지</title>
+    </head>
+    <body>
+        <nav>
+            <a href="./blog_list.html">Blog</a>
+            <a href="./about_me.html">about_me</a>
+        </nav>
+
+        <h1> 안녕하세요</h1>
+        <h2> 마경수의 사이트에 오신것을 진심으로 환영합니다</h2>
+        <h3> 여러분들과 여러가지 정보들과 사진들을 공유하고 다양한 정보들을 공유합시다</h3>
+
+        <P> 보다 자세한 내용을 구글링하고 싶으시다면, 아래 사이트를 클릭하시면 됩니다 </P>
+        <a href="https://www.google.com">Go to google</a>
+        <p> 현재 시간을 알고 싶으면, 아래에 있는 현재시간 버튼을 클릭해보세요</p>
+        <button onclick="whatTimeIsIt()">현재시간</button>
+        <hr />
+
+        <script type="text/javascript">
+            function doSomething() {
+                let a = document.getElementById('inputA').value;
+                let b = document.getElementById('inputB').value;
+                document.getElementById("valueA").innerHTML = a;
+                document.getElementById("valueB").innerHTML = b;
+                document.getElementById("valueC").innerHTML = Number(a) + Number(b);
+            }
+
+            function whatTimeIsIt() {
+                alert(new Date());
+            }
+        </script>
+        <hr/>
+        <img src="./images/picture2.jpg" width="600px">
+    </body>
+
+
+       
+
+</html>

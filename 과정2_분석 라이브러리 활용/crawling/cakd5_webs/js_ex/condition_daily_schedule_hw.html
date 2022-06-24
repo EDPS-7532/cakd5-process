@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>오늘의 일정</title>
+    <script>
+        var date = new Date(); // 현재시간 측정
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        //조건문
+        if (( hours>7 && (minutes >= 30 && minutes <=40 )) || (hours<8 && (minutes >= 15 && minutes <= 20))){
+            alert('아침기상 및 학원 준비.');
+        } else if (((hours>=8) && (minutes >=30 && minutes <= 40)) || (hours <=9)){
+            alert('학원에 도착해서 수업준비.');
+        } else if ((hours == 9) && (hours == 9 && minutes ==50)){
+            alert('출석체크 및 1교시 수업시간');
+        } else if ((hours == 10) && (hours == 10 && minutes ==50)){
+            alert('2교시 수업시간');
+        } else if ((hours == 11) && (hours == 11 && minutes ==50)){
+            alert('3교시 수업시간');
+        } else if ((hours == 12) && (hours == 12 && minutes ==50)){
+            alert('4교시 수업시간');
+        } else if ((hours == 12 && minutes == 50) && (hours == 14)){
+            alert('점심시간')
+        } else if ((hours == 14) && (hours == 14 && minutes ==50)){
+            alert('5교시 수업시간');
+        } else if ((hours == 15) && (hours == 15 && minutes ==50)){
+            alert('6교시 수업시간');
+        } else if ((hours == 16) && (hours == 16 && minutes ==50)){
+            alert('7교시 수업시간');
+        } else if ((hours>17) && (hours <=18)){
+            alert('오늘한 내용들 복습, 과제수행 타임1')
+        } else if ((hours>18) && (hours <=21)){
+            alert('과제수행 타임2');
+        } else if ((hours>21) && (hours <=23)){
+            alert('집도착후 .....');
+        } else {
+            alert('취침');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title></title>
+        <style>
+
+        </style>
+        <script>
+            window.onload = function() {
+
+                // document.querySelector('h1').style.backgroundColor = "red";
+                // document.querySelector('h1').style.color = "orange";
+                // document.querySelector('h1').innerText = "From JavaScript";
+                
+                var headers = document.querySelectorAll('h1');
+                for(var i = 0; i < headers.length; i++){
+                    headers[i].style.backgroundColor = "red";
+                    headers[i].style.color = "orange";
+                    
+                }
+
+                var headers = document.querySelectorAll('h2');
+                for(var i = 0; i < headers.length; i++){
+                    headers[i].style.backgroundColor = "blue";
+                    headers[i].style.color = "green";
+                    
+                }
+
+                var headers = document.querySelectorAll('h3');
+                for(var i = 0; i < headers.length; i++){
+                    headers[i].style.backgroundColor = "green";
+                    headers[i].style.color = "yellow";
+                   
+                }
+            //     for(var i = 0; i < headers.length; i++){
+            //         var header = headers[i];
+            //         header.style.backgroundColor = "red";
+            //         header.style.color = "orange";
+            //         header.innerText = "From JavaScript";
+            //     }
+               }
+        </script>
+    </head>
+    <body>
+        <h1>header</h1>
+        <h1>header</h1>
+        <h2>header</h2>
+        <h2>header</h2>
+        <h3>header</h3>
+        <h3>header</h3>
+
+
+    </body>
+</html>

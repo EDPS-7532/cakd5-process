@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Select All</title>
+    <script>
+        //글씨 색상, 바탕색을 다양하게 바꿔보세요.(필요시텍스트 변경 ok)'
+        window.onload = function () {
+            // 문서 객체를 선택합니다.
+            var headers = document.querySelectorAll('h1');
+            var headers = document.querySelectorAll('h2');
+            var headers = document.querySelectorAll('h3');
+
+            var headers = document.querySelectorAll('h1');
+                for(var i = 0; i < headers.length; i++){
+                    headers[i].style.backgroundColor = "red";
+                    headers[i].style.color = "orange";
+                    
+                }
+
+                var headers = document.querySelectorAll('h2');
+                for(var i = 0; i < headers.length; i++){
+                    headers[i].style.backgroundColor = "yellow";
+                    headers[i].style.color = "brown";
+                    
+                }
+
+                var headers = document.querySelectorAll('h3');
+                for(var i = 0; i < headers.length; i++){
+                    headers[i].style.backgroundColor = "green";
+                    headers[i].style.color = "yellow";
+                   
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>header</h1>
+    <h1>header</h1>
+    <h2>Header</h2>
+    <h2>Header</h2>
+    <h3>Header</h3>
+    <h3>Header</h3>
+</body>
+</html>
